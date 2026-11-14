@@ -4,7 +4,7 @@ Overworld reads live game state from RetroArch and shows it as a companion scree
 
 ## Install on the AYN Thor
 
-1. Download `overworld-vX.Y.Z-android-arm64.apk` from the newest **Overworld Android** release on the [releases page](../../releases). Its tag starts with `android-v`; releases for other platforms sit alongside it.
+1. On the Thor, open [greatdesk.app/overworld-android](https://greatdesk.app/overworld-android) and tap the download link. It always points at the newest version. (Every version is also on the [releases page](../../releases), under tags that start with `android-v`.)
 2. Open it on the Thor (from the Files app or the browser). Android asks once to let that app install apps. Allow it.
 3. Open Overworld. It asks for notifications and for access to your ROMs. Both are optional.
 
@@ -22,14 +22,16 @@ The check downloads one file, [android/update-android.gdaupdate](android/update-
 
 ## Add to Obtainium
 
-[Obtainium](https://github.com/ImranR98/Obtainium) can track this repo instead.
+[Obtainium](https://github.com/ImranR98/Obtainium) can keep Overworld up to date.
 
-**[Add Overworld to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.greatdesktopapps.overworld%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FGreatDesktopApps%2Foverworld-releases%22%2C%22author%22%3A%22GreatDesktopApps%22%2C%22name%22%3A%22Overworld%22%2C%22additionalSettings%22%3A%22%7B%5C%22filterReleaseTitlesByRegEx%5C%22%3A%20%5C%22%5EOverworld%20Android%20%5C%22%7D%22%7D)** (open this on the Thor; Obtainium shows what it will add before adding it)
+**[Add Overworld to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.greatdesktopapps.overworld%22%2C%22url%22%3A%22https%3A%2F%2Fgreatdesk.app%2Foverworld-android%22%2C%22author%22%3A%22GreatDesktopApps%22%2C%22name%22%3A%22Overworld%22%2C%22additionalSettings%22%3A%22%7B%5C%22versionExtractionRegEx%5C%22%3A%5C%22overworld-v%28%5C%5C%5C%5Cd%2B%5C%5C%5C%5C.%5C%5C%5C%5Cd%2B%5C%5C%5C%5C.%5C%5C%5C%5Cd%2B%29-android%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%7D)** (open this on the Thor; Obtainium shows what it will add before adding it)
 
 Or, in Obtainium, tap **Add App** and paste:
 
 ```
-https://github.com/GreatDesktopApps/overworld-releases
+https://greatdesk.app/overworld-android
 ```
 
-and set **Filter release titles by regular expression** to `^Overworld Android `. Obtainium already skips releases that have no APK, so this is a safeguard, not a requirement.
+and set **Version extraction regular expression** to `overworld-v(\d+\.\d+\.\d+)-android`, with match group `1`. Obtainium then shows real version numbers.
+
+If you already track this GitHub repo in Obtainium, that keeps working. There's no need to switch.
