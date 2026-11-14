@@ -24,7 +24,7 @@ The check downloads one file, [android/update-android.gdaupdate](android/update-
 
 [Obtainium](https://github.com/ImranR98/Obtainium) can keep Overworld up to date.
 
-**[Add Overworld to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.greatdesktopapps.overworld%22%2C%22url%22%3A%22https%3A%2F%2Fgreatdesk.app%2Foverworld-android%22%2C%22author%22%3A%22GreatDesktopApps%22%2C%22name%22%3A%22Overworld%22%2C%22additionalSettings%22%3A%22%7B%5C%22versionExtractionRegEx%5C%22%3A%5C%22overworld-v%28%5C%5C%5C%5Cd%2B%5C%5C%5C%5C.%5C%5C%5C%5Cd%2B%5C%5C%5C%5C.%5C%5C%5C%5Cd%2B%29-android%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%7D)** (open this on the Thor; Obtainium shows what it will add before adding it)
+**[Add Overworld to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.greatdesktopapps.overworld%22%2C%22url%22%3A%22https%3A%2F%2Fgreatdesk.app%2Foverworld-android%22%2C%22author%22%3A%22GreatDesktopApps%22%2C%22name%22%3A%22Overworld%22%2C%22additionalSettings%22%3A%22%7B%5C%22versionExtractionRegEx%5C%22%3A%5C%22overworld-v%28%5C%5C%5C%5Cd%2B%5C%5C%5C%5C.%5C%5C%5C%5Cd%2B%5C%5C%5C%5C.%5C%5C%5C%5Cd%2B%29-android%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22GreatDesktopApps%5C%22%7D%22%7D)** (open this on the Thor; Obtainium shows what it will add before adding it)
 
 Or, in Obtainium, tap **Add App** and paste:
 
@@ -33,5 +33,7 @@ https://greatdesk.app/overworld-android
 ```
 
 and set **Version extraction regular expression** to `overworld-v(\d+\.\d+\.\d+)-android`, with match group `1`. Obtainium then shows real version numbers.
+
+Obtainium names the author after the page's host, greatdesk.app. To show GreatDesktopApps instead, open Overworld in Obtainium, tap the pencil button (**Additional options**) and set **Author** to `GreatDesktopApps`. The Add Overworld to Obtainium link above sets this for you.
 
 If you already track this GitHub repo in Obtainium, that keeps working. There's no need to switch.
